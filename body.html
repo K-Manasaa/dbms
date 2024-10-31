@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Symptom Checker</h1>
+
+    <!-- Dropdowns for symptoms -->
+    <div class="symptom-section">
+        <label for="symptom1">Select Symptom 1:</label>
+        <select id="symptom1" name="symptom1">
+            <option value="">Choose a symptom</option>
+            <option value="fever">Fever</option>
+            <option value="cough">Cough</option>
+            <option value="cold">Cold</option>
+            <option value="headache">Headache</option>
+            <option value="fatigue">Fatigue</option>
+            <option value="shortnessofbreath">Shortness of Breath</option>
+            <option value="chestpain">Chest Pain</option>
+            <option value="sorethroat">Sore Throat</option>
+            <option value="runnynose">Runny Nose</option>
+            <option value="musclepain">Muscle Pain</option>
+            <option value="nausea">Nausea</option>
+            <option value="vomiting">Vomiting</option>
+            <option value="diarrhea">Diarrhea</option>
+            <option value="abdominalpain">Abdominal Pain</option>
+            <option value="dizziness">Dizziness</option>
+            <option value="sneezing">Sneezing</option>
+            <option value="lossofappetite">Loss of Appetite</option>
+            <option value="jointpain">Joint Pain</option>
+            <option value="chills">Chills</option>
+            <option value="skinrash">Skin Rash</option>
+            <option value="swollenlymphnodes">Swollen Lymph Nodes</option>
+            <option value="itching">Itching</option>
+            <option value="congestion">Congestion</option>
+            <option value="nightsweats">Night Sweats</option>
+            <option value="difficultyswallowing">Difficulty in Swallowing</option>
+            <option value="bloodinstool">Blood in Stool</option>
+            <option value="darkurine">Dark Urine</option>
+            <option value="lightcolouredstool">Light Colored Stool</option>
+            <option value="rapidheartbeat">Rapid Heartbeat</option>
+            <option value="weakness">Weakness</option>
+            <option value="yellowingofskin">Yellowing of Skin</option>
+            <option value="lossofsmell">Loss of Smell</option>
+            <option value="lossoftaste">Loss of Taste</option>
+            <option value="blurredvision">Blurred Vision</option>
+            <option value="earpain">Earpain</option>
+            <option value="swelling">Swelling</option>
+            <option value="tremors">Tremours</option>
+            <option value="excessivesweating">Excessive Sweating</option>
+            <option value="wheezing">Wheezing</option>
+            <option value="tinglingsensation">Tingling Sensation</option>
+            <option value="backpain">Backpain</option>
+            <option value="heartpalpitation">Heart Palpitation</option>
+            <option value="anxiety">Anxiety</option>
+            <option value="drymouth">Drymouth</option>
+            <option value="nosebleed">Nosebleed</option>
+            <option value="fainting">Fainting</option>
+            <option value="stiffneck">Stiffneck</option>
+            <option value="sensitivityoflight">Sensitivity of Light</option>
+            <option value="insomnia">Insomnia</option>
+            <option value="difficultybreathing">Difficulty in Breathing</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <!-- Emoji for severity levels -->
+        <div class="severity">
+            <span class="emoji" title="Mild">😐</span>
+            <span class="emoji" title="Moderate">😷</span>
+            <span class="emoji" title="Severe">🤒</span>
+        </div>
+    </div>
+
+    <div class="symptom-section">
+        <label for="symptom2">Select Symptom 2:</label>
+        <select id="symptom2" name="symptom2">
+            <option value="">Choose a symptom</option>
+            <option value="fever">Fever</option>
+            <option value="cough">Cough</option>
+            <option value="cold">Cold</option>
+            <option value="headache">Headache</option>
+            <option value="fatigue">Fatigue</option>
+            <option value="shortnessofbreath">Shortness of Breath</option>
+            <option value="chestpain">Chest Pain</option>
+            <option value="sorethroat">Sore Throat</option>
+            <option value="runnynose">Runny Nose</option>
+            <option value="musclepain">Muscle Pain</option>
+            <option value="nausea">Nausea</option>
+            <option value="vomiting">Vomiting</option>
+            <option value="diarrhea">Diarrhea</option>
+            <option value="abdominalpain">Abdominal Pain</option>
+            <option value="dizziness">Dizziness</option>
+            <option value="sneezing">Sneezing</option>
+            <option value="lossofappetite">Loss of Appetite</option>
+            <option value="jointpain">Joint Pain</option>
+            <option value="chills">Chills</option>
+            <option value="skinrash">Skin Rash</option>
+            <option value="swollenlymphnodes">Swollen Lymph Nodes</option>
+            <option value="itching">Itching</option>
+            <option value="congestion">Congestion</option>
+            <option value="nightsweats">Night Sweats</option>
+            <option value="difficultyswallowing">Difficulty in Swallowing</option>
+            <option value="bloodinstool">Blood in Stool</option>
+            <option value="darkurine">Dark Urine</option>
+            <option value="lightcolouredstool">Light Colored Stool</option>
+            <option value="rapidheartbeat">Rapid Heartbeat</option>
+            <option value="weakness">Weakness</option>
+            <option value="yellowingofskin">Yellowing of Skin</option>
+            <option value="lossofsmell">Loss of Smell</option>
+            <option value="lossoftaste">Loss of Taste</option>
+            <option value="blurredvision">Blurred Vision</option>
+            <option value="earpain">Earpain</option>
+            <option value="swelling">Swelling</option>
+            <option value="tremors">Tremours</option>
+            <option value="excessivesweating">Excessive Sweating</option>
+            <option value="wheezing">Wheezing</option>
+            <option value="tinglingsensation">Tingling Sensation</option>
+            <option value="backpain">Backpain</option>
+            <option value="heartpalpitation">Heart Palpitation</option>
+            <option value="anxiety">Anxiety</option>
+            <option value="drymouth">Drymouth</option>
+            <option value="nosebleed">Nosebleed</option>
+            <option value="fainting">Fainting</option>
+            <option value="stiffneck">Stiffneck</option>
+            <option value="sensitivityoflight">Sensitivity of Light</option>
+            <option value="insomnia">Insomnia</option>
+            <option value="difficultybreathing">Difficulty in Breathing</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <div class="severity">
+            <span class="emoji" title="Mild">😐</span>
+            <span class="emoji" title="Moderate">😷</span>
+            <span class="emoji" title="Severe">🤒</span>
+        </div>
+    </div>
+
+    <div class="symptom-section">
+        <label for="symptom3">Select Symptom 3:</label>
+        <select id="symptom3" name="symptom3">
+            <option value="">Choose a symptom</option>
+            <option value="fever">Fever</option>
+            <option value="cough">Cough</option>
+            <option value="cold">Cold</option>
+            <option value="headache">Headache</option>
+            <option value="fatigue">Fatigue</option>
+            <option value="shortnessofbreath">Shortness of Breath</option>
+            <option value="chestpain">Chest Pain</option>
+            <option value="sorethroat">Sore Throat</option>
+            <option value="runnynose">Runny Nose</option>
+            <option value="musclepain">Muscle Pain</option>
+            <option value="nausea">Nausea</option>
+            <option value="vomiting">Vomiting</option>
+            <option value="diarrhea">Diarrhea</option>
+            <option value="abdominalpain">Abdominal Pain</option>
+            <option value="dizziness">Dizziness</option>
+            <option value="sneezing">Sneezing</option>
+            <option value="lossofappetite">Loss of Appetite</option>
+            <option value="jointpain">Joint Pain</option>
+            <option value="chills">Chills</option>
+            <option value="skinrash">Skin Rash</option>
+            <option value="swollenlymphnodes">Swollen Lymph Nodes</option>
+            <option value="itching">Itching</option>
+            <option value="congestion">Congestion</option>
+            <option value="nightsweats">Night Sweats</option>
+            <option value="difficultyswallowing">Difficulty in Swallowing</option>
+            <option value="bloodinstool">Blood in Stool</option>
+            <option value="darkurine">Dark Urine</option>
+            <option value="lightcolouredstool">Light Colored Stool</option>
+            <option value="rapidheartbeat">Rapid Heartbeat</option>
+            <option value="weakness">Weakness</option>
+            <option value="yellowingofskin">Yellowing of Skin</option>
+            <option value="lossofsmell">Loss of Smell</option>
+            <option value="lossoftaste">Loss of Taste</option>
+            <option value="blurredvision">Blurred Vision</option>
+            <option value="earpain">Earpain</option>
+            <option value="swelling">Swelling</option>
+            <option value="tremors">Tremours</option>
+            <option value="excessivesweating">Excessive Sweating</option>
+            <option value="wheezing">Wheezing</option>
+            <option value="tinglingsensation">Tingling Sensation</option>
+            <option value="backpain">Backpain</option>
+            <option value="heartpalpitation">Heart Palpitation</option>
+            <option value="anxiety">Anxiety</option>
+            <option value="drymouth">Drymouth</option>
+            <option value="nosebleed">Nosebleed</option>
+            <option value="fainting">Fainting</option>
+            <option value="stiffneck">Stiffneck</option>
+            <option value="sensitivityoflight">Sensitivity of Light</option>
+            <option value="insomnia">Insomnia</option>
+            <option value="difficultybreathing">Difficulty in Breathing</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <div class="severity">
+            <span class="emoji" title="Mild">😐</span>
+            <span class="emoji" title="Moderate">😷</span>
+            <span class="emoji" title="Severe">🤒</span>
+        </div>
+    </div>
+
+    <button type="submit" class="submit-btn">Check Disease</button>
+</div>
+
+</body>
+</html>
